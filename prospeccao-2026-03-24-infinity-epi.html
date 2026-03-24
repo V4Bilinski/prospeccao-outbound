@@ -948,6 +948,156 @@
     button:hover, a:hover {
       cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="%23CC0000" stroke-width="2"/></svg>') 12 12, pointer;
     }
+
+    /* === MARKETING ANALYSIS STYLES === */
+    .scenario {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .scenario-card {
+      background: linear-gradient(135deg, var(--surface) 0%, var(--surface-md) 100%);
+      border: 2px solid rgba(204, 0, 0, 0.15);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .scenario-card.conservador { border-color: rgba(34, 197, 94, 0.3); }
+    .scenario-card.conservador:hover { border-color: var(--success); box-shadow: 0 0 25px rgba(34, 197, 94, 0.15); transform: translateY(-3px); }
+    .scenario-card.moderado { border-color: rgba(245, 158, 11, 0.3); }
+    .scenario-card.moderado:hover { border-color: var(--warning); box-shadow: 0 0 25px rgba(245, 158, 11, 0.15); transform: translateY(-3px); }
+    .scenario-card.agressivo { border-color: rgba(204, 0, 0, 0.3); }
+    .scenario-card.agressivo:hover { border-color: var(--red); box-shadow: 0 0 25px rgba(204, 0, 0, 0.15); transform: translateY(-3px); }
+
+    .scenario-card h4 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .scenario-badge {
+      display: inline-block;
+      padding: 0.25rem 0.7rem;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    .scenario-badge.conservador { background: rgba(34, 197, 94, 0.15); color: var(--success); }
+    .scenario-badge.moderado { background: rgba(245, 158, 11, 0.15); color: var(--warning); }
+    .scenario-badge.agressivo { background: rgba(204, 0, 0, 0.15); color: var(--red-vivid); }
+
+    .metric {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.65rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .metric:last-child { border-bottom: none; }
+    .metric-label { color: var(--text-secondary); font-size: 0.85rem; }
+    .metric-value { font-weight: 700; color: var(--white); font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; }
+
+    .vulnerability {
+      background: var(--surface);
+      border-left: 4px solid var(--red);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin-bottom: 0.75rem;
+      transition: all 0.3s ease;
+    }
+    .vulnerability:hover { transform: translateX(4px); box-shadow: 0 4px 16px rgba(204,0,0,0.08); }
+    .vulnerability-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem; }
+    .vulnerability h4 { font-size: 1rem; color: var(--white); }
+    .vulnerability p { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.4rem; }
+
+    .impact-badge {
+      padding: 0.2rem 0.7rem;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .impact-high { background: rgba(204, 0, 0, 0.15); color: var(--red-vivid); }
+    .impact-medium { background: rgba(245, 158, 11, 0.15); color: var(--warning); }
+    .impact-low { background: rgba(34, 197, 94, 0.15); color: var(--success); }
+
+    .comparison { overflow-x: auto; margin-bottom: 2rem; border-radius: 12px; }
+    .comparison table { width: 100%; border-collapse: collapse; background: var(--surface); border-radius: 12px; overflow: hidden; }
+    .comparison th { background: rgba(204,0,0,0.08); padding: 0.85rem; text-align: left; font-weight: 700; color: var(--white); border-bottom: 2px solid rgba(204,0,0,0.15); font-size: 0.85rem; }
+    .comparison td { padding: 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.04); color: var(--text-secondary); font-size: 0.85rem; }
+    .comparison tr:last-child td { border-bottom: none; }
+    .comparison tr:hover { background: rgba(204,0,0,0.03); }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .mkt-card {
+      background: var(--surface);
+      border: 1px solid rgba(204,0,0,0.12);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    .mkt-card:hover { border-color: var(--red); transform: translateY(-3px); box-shadow: 0 8px 24px rgba(204,0,0,0.08); }
+    .mkt-card h3 { font-size: 1.1rem; margin-bottom: 0.75rem; color: var(--white); font-family: 'Plus Jakarta Sans', sans-serif; }
+    .mkt-card p { color: var(--text-secondary); margin-bottom: 0.5rem; font-size: 0.9rem; }
+
+    .argument {
+      background: linear-gradient(135deg, var(--surface) 0%, var(--surface-md) 100%);
+      border: 1px solid rgba(204,0,0,0.12);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .argument:hover { border-color: var(--red); transform: translateX(3px); }
+    .argument-header { display: flex; justify-content: space-between; align-items: center; }
+    .argument h4 { font-size: 1.05rem; color: var(--white); flex: 1; }
+    .toggle-icon { font-size: 1.25rem; color: var(--red-vivid); transition: transform 0.3s ease; }
+    .argument.open .toggle-icon { transform: rotate(180deg); }
+    .argument-content { display: none; max-height: 0; overflow: hidden; transition: all 0.3s ease; margin-top: 1rem; }
+    .argument.open .argument-content { display: block; max-height: 600px; }
+    .argument-main h5 { color: var(--white); margin-bottom: 0.5rem; font-size: 0.95rem; }
+    .argument-main p { color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.9rem; }
+
+    .mkt-objection {
+      margin-top: 1rem;
+      padding: 1rem;
+      background: rgba(0,0,0,0.3);
+      border-left: 3px solid var(--warning);
+      border-radius: 8px;
+    }
+    .mkt-objection h6 { color: var(--warning); margin-bottom: 0.5rem; font-size: 0.9rem; }
+    .mkt-objection p { color: var(--text-secondary); font-size: 0.85rem; }
+
+    .synthesis-card {
+      margin-top: 1.5rem;
+      background: linear-gradient(135deg, rgba(34,197,94,0.06) 0%, rgba(204,0,0,0.04) 100%);
+      border: 1px solid rgba(34,197,94,0.2);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+    .synthesis-card h3 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--success); font-family: 'Plus Jakarta Sans', sans-serif; }
+    .synthesis-card p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0.75rem; }
+
+    @media (max-width: 768px) {
+      .scenario { grid-template-columns: 1fr; }
+      .cards-grid { grid-template-columns: 1fr; }
+      .comparison table { font-size: 0.8rem; }
+      .comparison th, .comparison td { padding: 0.6rem 0.4rem; }
+    }
   </style>
 </head>
 <body>
@@ -965,6 +1115,10 @@
           <li role="presentation"><button type="button" class="tab-button" data-tab="ficha" role="tab" aria-selected="false" aria-controls="ficha">Ficha completa</button></li>
           <li role="presentation"><button type="button" class="tab-button" data-tab="spiced" role="tab" aria-selected="false" aria-controls="spiced">SPICED</button></li>
           <li role="presentation"><button type="button" class="tab-button" data-tab="cadencias" role="tab" aria-selected="false" aria-controls="cadencias">Reunião 16h</button></li>
+          <li role="presentation"><button type="button" class="tab-button" data-tab="projecao" role="tab" aria-selected="false" aria-controls="projecao">Projeção</button></li>
+          <li role="presentation"><button type="button" class="tab-button" data-tab="vulnerabilidades" role="tab" aria-selected="false" aria-controls="vulnerabilidades">Vulnerabilidades</button></li>
+          <li role="presentation"><button type="button" class="tab-button" data-tab="competitiva" role="tab" aria-selected="false" aria-controls="competitiva">Competitiva</button></li>
+          <li role="presentation"><button type="button" class="tab-button" data-tab="argumentos" role="tab" aria-selected="false" aria-controls="argumentos">Argumentos</button></li>
         </ul>
       </nav>
     </div>
@@ -1698,6 +1852,16 @@
           document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
         }
       });
+    });
+
+    // Argument toggle (marketing tabs)
+    document.querySelectorAll('.argument').forEach(arg => {
+      const header = arg.querySelector('.argument-header');
+      if (header) {
+        header.addEventListener('click', () => {
+          arg.classList.toggle('open');
+        });
+      }
     });
   </script>
 </body>
