@@ -964,8 +964,7 @@
           <li role="presentation"><button type="button" class="tab-button active" data-tab="resumo" role="tab" aria-selected="true" aria-controls="resumo">Resumo</button></li>
           <li role="presentation"><button type="button" class="tab-button" data-tab="ficha" role="tab" aria-selected="false" aria-controls="ficha">Ficha completa</button></li>
           <li role="presentation"><button type="button" class="tab-button" data-tab="spiced" role="tab" aria-selected="false" aria-controls="spiced">SPICED</button></li>
-          <li role="presentation"><button type="button" class="tab-button" data-tab="cadencias" role="tab" aria-selected="false" aria-controls="cadencias">Cadências</button></li>
-          <li role="presentation"><button type="button" class="tab-button" data-tab="objecoes" role="tab" aria-selected="false" aria-controls="objecoes">Objeções</button></li>
+          <li role="presentation"><button type="button" class="tab-button" data-tab="cadencias" role="tab" aria-selected="false" aria-controls="cadencias">Reunião 16h</button></li>
         </ul>
       </nav>
     </div>
@@ -1230,101 +1229,140 @@
       </div>
     </section>
 
-    <!-- TAB: CADÊNCIAS -->
+    <!-- TAB: REUNIÃO DE VENDAS 16H -->
     <section id="cadencias" class="tab-content" role="tabpanel">
+      <div class="card" style="border-left: 4px solid var(--red); position: relative; overflow: hidden;">
+        <div style="position: absolute; top: 0; right: 0; background: var(--red); color: white; padding: 0.5rem 1.25rem; border-radius: 0 0 0 8px; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; font-weight: 600;">HOJE — 16:00</div>
+        <h2 style="margin-top: 0.5rem;">Prep de reunião de vendas</h2>
+        <p style="margin-bottom: 0.5rem; color: var(--text-secondary);">Infinity EPI — Lucas Pinheiro (CEO)</p>
+        <p style="margin-bottom: 2rem; color: var(--gray-lt); font-size: 0.9rem;">Reunião consultiva de diagnóstico. Objetivo: identificar a trava de receita e gerar comprometimento para próxima etapa.</p>
+
+        <!-- CONTEXTO RÁPIDO -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+          <div style="background: var(--surface-md); padding: 1rem; border-radius: 8px;">
+            <p style="font-size: 0.75rem; color: var(--gray-lt); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">Faturamento</p>
+            <p style="font-size: 1.25rem; font-weight: 700; color: var(--white);">~R$ 1,2M/mês</p>
+          </div>
+          <div style="background: var(--surface-md); padding: 1rem; border-radius: 8px;">
+            <p style="font-size: 0.75rem; color: var(--gray-lt); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">Trava identificada</p>
+            <p style="font-size: 1.25rem; font-weight: 700; color: var(--red-vivid);">T7 — Aquisição</p>
+          </div>
+          <div style="background: var(--surface-md); padding: 1rem; border-radius: 8px;">
+            <p style="font-size: 0.75rem; color: var(--gray-lt); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">SPICED Score</p>
+            <p style="font-size: 1.25rem; font-weight: 700; color: var(--success);">4.35 / 5 — HOT</p>
+          </div>
+          <div style="background: var(--surface-md); padding: 1rem; border-radius: 8px;">
+            <p style="font-size: 0.75rem; color: var(--gray-lt); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">Produto recomendado</p>
+            <p style="font-size: 1.25rem; font-weight: 700; color: var(--warning);">DR-X (Raio-X)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- AGENDA -->
       <div class="card">
-        <h2>Cadências de mensagem</h2>
-        <p style="margin-bottom: 2rem;">Sequência sugerida de contatos para maximizar relevância e diminuir objeção.</p>
+        <h2>Agenda sugerida (45 min)</h2>
+        <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Estrutura consultiva — posicionar como diagnóstico, nunca como pitch de venda.</p>
 
         <div class="accordion-item expanded">
-          <button class="accordion-header" aria-expanded="true" aria-controls="msg1">
-            <span>Mensagem 1 — LinkedIn (Dia 0): Convite + hook de dor</span>
+          <button class="accordion-header" aria-expanded="true" aria-controls="agenda1">
+            <span>0–5 min: Abertura e rapport</span>
             <span class="accordion-toggle">▼</span>
           </button>
-          <div class="accordion-content" id="msg1">
+          <div class="accordion-content" id="agenda1">
             <div class="accordion-content-inner">
-              <p><strong>Canal:</strong> LinkedIn (convite + mensagem privada)</p>
-              <p style="margin-top: 0.75rem;"><strong>Timing:</strong> Terça ou quarta, 9-10h</p>
-              <p style="margin-top: 0.75rem;"><strong>Corpo:</strong></p>
-              <p style="margin-top: 0.75rem; color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red);">"Oi Lucas, passei por aqui analisando empresas de EPIs que crescem organicamente mas deixam margem enorme na captação digital. Sua operação com 28 representantes e zero tráfego pago é justamente o cenário que mais vemos gerar ROI rápido. Faz sentido explorar isso com você?"</p>
-              <button class="copy-button" data-text="Oi Lucas, passei por aqui analisando empresas de EPIs que crescem organicamente mas deixam margem enorme na captação digital. Sua operação com 28 representantes e zero tráfego pago é justamente o cenário que mais vemos gerar ROI rápido. Faz sentido explorar isso com você?">Copiar texto</button>
+              <p style="color: var(--off-white); margin-bottom: 0.75rem;"><strong>Objetivo:</strong> Criar conexão e definir expectativa da conversa.</p>
+              <p style="color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red);">"Lucas, obrigado pelo tempo. Hoje não vim vender nada — vim entender se faz sentido a gente trabalhar junto. Vou fazer umas perguntas sobre a operação de vocês e no final digo com transparência se consigo ajudar ou não. Combinado?"</p>
+              <button class="copy-button" data-text="Lucas, obrigado pelo tempo. Hoje não vim vender nada — vim entender se faz sentido a gente trabalhar junto. Vou fazer umas perguntas sobre a operação de vocês e no final digo com transparência se consigo ajudar ou não. Combinado?">Copiar texto</button>
+              <p style="margin-top: 0.75rem; color: var(--gray-lt); font-size: 0.85rem;"><strong>Dica:</strong> Mencionar que viu a operação da Infinity com 28 representantes e a certificação OCP — mostra que fez dever de casa.</p>
             </div>
           </div>
         </div>
 
         <div class="accordion-item">
-          <button class="accordion-header" aria-expanded="false" aria-controls="msg2">
-            <span>Mensagem 2 — LinkedIn (Dia 3): Follow-up + contexto OCP</span>
+          <button class="accordion-header" aria-expanded="false" aria-controls="agenda2">
+            <span>5–15 min: Discovery — Situação e dor</span>
             <span class="accordion-toggle">▼</span>
           </button>
-          <div class="accordion-content" id="msg2">
+          <div class="accordion-content" id="agenda2">
             <div class="accordion-content-inner">
-              <p><strong>Canal:</strong> LinkedIn (mensagem privada)</p>
-              <p style="margin-top: 0.75rem;"><strong>Timing:</strong> Terça ou quarta, 14h</p>
-              <p style="margin-top: 0.75rem;"><strong>Corpo:</strong></p>
-              <p style="margin-top: 0.75rem; color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red);">"Lucas, só vendo um detalhe — a Portaria OCP que entrou em fev/2026 está criando uma vantagem competitiva gigante para importadores certificados como vocês. Empresas menores e não certificadas estão tendo que se reposicionar. Essa é talvez a janela maior de tração que vocês têm este ano. Você está usando isso como diferencial de venda?"</p>
-              <button class="copy-button" data-text="Lucas, só vendo um detalhe — a Portaria OCP que entrou em fev/2026 está criando uma vantagem competitiva gigante para importadores certificados como vocês. Empresas menores e não certificadas estão tendo que se reposicionar. Essa é talvez a janela maior de tração que vocês têm este ano. Você está usando isso como diferencial de venda?">Copiar texto</button>
+              <p style="color: var(--off-white); margin-bottom: 0.75rem;"><strong>Objetivo:</strong> Mapear situação atual e fazer Lucas verbalizar a dor.</p>
+              <p style="margin-bottom: 0.5rem; font-weight: 600; color: var(--warning);">Perguntas de situação:</p>
+              <p style="color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--warning); margin-bottom: 0.75rem;">"Hoje, de onde vêm os novos clientes da Infinity? Rede de representantes, indicação, ou tem algum canal digital ativo?"</p>
+              <button class="copy-button" data-text="Hoje, de onde vêm os novos clientes da Infinity? Rede de representantes, indicação, ou tem algum canal digital ativo?">Copiar texto</button>
+              <p style="color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--warning); margin-top: 0.75rem; margin-bottom: 0.75rem;">"Qual é a meta de faturamento para 2026? Vocês estão batendo consistente ou tem meses de vale?"</p>
+              <button class="copy-button" data-text="Qual é a meta de faturamento para 2026? Vocês estão batendo consistente ou tem meses de vale?">Copiar texto</button>
+              <p style="color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--warning); margin-top: 0.75rem; margin-bottom: 0.75rem;">"Com a Portaria OCP de fevereiro, vocês já perceberam mudança na concorrência? Importadores menores saindo?"</p>
+              <button class="copy-button" data-text="Com a Portaria OCP de fevereiro, vocês já perceberam mudança na concorrência? Importadores menores saindo?">Copiar texto</button>
+              <p style="margin-top: 1rem; margin-bottom: 0.5rem; font-weight: 600; color: var(--red-vivid);">Perguntas de dor:</p>
+              <p style="color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red); margin-bottom: 0.75rem;">"O que acontece quando um representante forte sai? Quanto de receita vai embora com ele?"</p>
+              <button class="copy-button" data-text="O que acontece quando um representante forte sai? Quanto de receita vai embora com ele?">Copiar texto</button>
+              <p style="color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red); margin-top: 0.75rem; margin-bottom: 0.75rem;">"Se hoje vocês faturassem o dobro, o gargalo seria produção/importação ou geração de demanda?"</p>
+              <button class="copy-button" data-text="Se hoje vocês faturassem o dobro, o gargalo seria produção/importação ou geração de demanda?">Copiar texto</button>
             </div>
           </div>
         </div>
 
         <div class="accordion-item">
-          <button class="accordion-header" aria-expanded="false" aria-controls="msg3">
-            <span>Mensagem 3 — Email (Dia 7): Proposta de call</span>
+          <button class="accordion-header" aria-expanded="false" aria-controls="agenda3">
+            <span>15–25 min: Impacto e evento crítico</span>
             <span class="accordion-toggle">▼</span>
           </button>
-          <div class="accordion-content" id="msg3">
+          <div class="accordion-content" id="agenda3">
             <div class="accordion-content-inner">
-              <p><strong>Canal:</strong> Email (para executivo de marketing ou diretamente a Lucas)</p>
-              <p style="margin-top: 0.75rem;"><strong>Timing:</strong> Terça 10h</p>
-              <p style="margin-top: 0.75rem;"><strong>Assunto:</strong> "Infinity EPI + Demanda Digital + OCP = oportunidade trimestral"</p>
-              <p style="margin-top: 0.75rem;"><strong>Corpo:</strong></p>
-              <p style="margin-top: 0.75rem; color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red);">"Oi Lucas, mandei mensagem no LinkedIn. Estou vendo uma oportunidade muito específica: empresas de EPIs como a Infinity que crescem por relacionamento mas deixam demanda digital 100% em branco. Com a regulamentação OCP, agora é possível posicionar tudo isso em 3-4 meses. Tenho 15 min amanhã às 14h? Senão, aponta um horário que funciona."</p>
-              <button class="copy-button" data-text="Oi Lucas, mandei mensagem no LinkedIn. Estou vendo uma oportunidade muito específica: empresas de EPIs como a Infinity que crescem por relacionamento mas deixam demanda digital 100% em branco. Com a regulamentação OCP, agora é possível posicionar tudo isso em 3-4 meses. Tenho 15 min amanhã às 14h? Senão, aponta um horário que funciona.">Copiar texto</button>
+              <p style="color: var(--off-white); margin-bottom: 0.75rem;"><strong>Objetivo:</strong> Quantificar o custo da inação e ancorar urgência.</p>
+              <p style="margin-bottom: 0.5rem; font-weight: 600; color: var(--warning);">Enquadramentos de impacto:</p>
+              <p style="color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red); margin-bottom: 0.75rem;">"Lucas, fiz uma conta antes da reunião. Se a Infinity capta zero leads digitais e o mercado de EPI cresce 8% ao ano, em 12 meses vocês estão deixando na mesa algo entre R$ 1,4M e R$ 5,7M de receita potencial. Esse número faz sentido na realidade de vocês?"</p>
+              <button class="copy-button" data-text="Lucas, fiz uma conta antes da reunião. Se a Infinity capta zero leads digitais e o mercado de EPI cresce 8% ao ano, em 12 meses vocês estão deixando na mesa algo entre R$ 1,4M e R$ 5,7M de receita potencial. Esse número faz sentido na realidade de vocês?">Copiar texto</button>
+              <p style="margin-top: 1rem; margin-bottom: 0.5rem; font-weight: 600; color: var(--red-vivid);">Ancoragem de evento crítico:</p>
+              <p style="color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red); margin-bottom: 0.75rem;">"A regulamentação OCP de fevereiro abriu uma janela — concorrentes sem certificação estão perdendo mercado agora. Essa janela tem prazo. Quem se posicionar digitalmente primeiro captura essa demanda que ficou órfã. Vocês estão fazendo alguma coisa pra capturar isso?"</p>
+              <button class="copy-button" data-text="A regulamentação OCP de fevereiro abriu uma janela — concorrentes sem certificação estão perdendo mercado agora. Essa janela tem prazo. Quem se posicionar digitalmente primeiro captura essa demanda que ficou órfã. Vocês estão fazendo alguma coisa pra capturar isso?">Copiar texto</button>
+              <p style="margin-top: 1rem; color: var(--gray-lt); font-size: 0.85rem;"><strong>Dados de apoio:</strong> Mercado EPI R$ 21B, crescimento 8% a.a. Concorrentes Supermax/Volk já investem em digital. Elite Superflex tem tráfego pago ativo.</p>
             </div>
           </div>
         </div>
 
         <div class="accordion-item">
-          <button class="accordion-header" aria-expanded="false" aria-controls="msg4">
-            <span>Mensagem 4 — LinkedIn (Dia 12): Reengajamento + proof point</span>
+          <button class="accordion-header" aria-expanded="false" aria-controls="agenda4">
+            <span>25–35 min: Apresentação do Destrava Receita</span>
             <span class="accordion-toggle">▼</span>
           </button>
-          <div class="accordion-content" id="msg4">
+          <div class="accordion-content" id="agenda4">
             <div class="accordion-content-inner">
-              <p><strong>Canal:</strong> LinkedIn (mensagem privada)</p>
-              <p style="margin-top: 0.75rem;"><strong>Timing:</strong> Segunda 10h (mudando padrão proposital)</p>
-              <p style="margin-top: 0.75rem;"><strong>Corpo:</strong></p>
-              <p style="margin-top: 0.75rem; color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red);">"Lucas, achei relevante — outro importador de EPIs que começou em situação parecida gerou 15 leads/mês em 60 dias e alimentou rede de 20 representantes. Sem fazer nada alucinante. Só orquestração de conteúdo + tráfego circulante. Vale conversa de 20 min?"</p>
-              <button class="copy-button" data-text="Lucas, achei relevante — outro importador de EPIs que começou em situação parecida gerou 15 leads/mês em 60 dias e alimentou rede de 20 representantes. Sem fazer nada alucinante. Só orquestração de conteúdo + tráfego circulante. Vale conversa de 20 min?">Copiar texto</button>
+              <p style="color: var(--off-white); margin-bottom: 0.75rem;"><strong>Objetivo:</strong> Posicionar o DR-X como diagnóstico, não como serviço.</p>
+              <p style="color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red); margin-bottom: 0.75rem;">"Lucas, com base no que você falou, acho que a Infinity tem o que a gente chama de Trava 7 — trava de aquisição. Vocês têm produto, certificação, rede comercial, mas o fluxo de demanda digital está zerado. É como ter uma Ferrari na garagem sem gasolina."</p>
+              <button class="copy-button" data-text="Lucas, com base no que você falou, acho que a Infinity tem o que a gente chama de Trava 7 — trava de aquisição. Vocês têm produto, certificação, rede comercial, mas o fluxo de demanda digital está zerado. É como ter uma Ferrari na garagem sem gasolina.">Copiar texto</button>
+              <p style="color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red); margin-top: 0.75rem; margin-bottom: 0.75rem;">"O que a gente faz é um raio-x de 45 dias na operação. A gente mapeia exatamente onde está a trava, qual o impacto financeiro dela, e entrega um plano de ação priorizado. Não é um relatório bonito — é um diagnóstico cirúrgico pra saber exatamente o que fazer primeiro."</p>
+              <button class="copy-button" data-text="O que a gente faz é um raio-x de 45 dias na operação. A gente mapeia exatamente onde está a trava, qual o impacto financeiro dela, e entrega um plano de ação priorizado. Não é um relatório bonito — é um diagnóstico cirúrgico pra saber exatamente o que fazer primeiro.">Copiar texto</button>
+              <p style="margin-top: 1rem; color: var(--gray-lt); font-size: 0.85rem;"><strong>Não mencionar preço neste momento.</strong> Só se Lucas perguntar diretamente. Se perguntar, falar em faixa: "Depende do escopo — entre R$ 15K e R$ 60K, dependendo da complexidade da operação."</p>
             </div>
           </div>
         </div>
 
         <div class="accordion-item">
-          <button class="accordion-header" aria-expanded="false" aria-controls="msg5">
-            <span>Mensagem 5 — WhatsApp (Dia 18, se tiver contato)</span>
+          <button class="accordion-header" aria-expanded="false" aria-controls="agenda5">
+            <span>35–45 min: Fechamento e próximos passos</span>
             <span class="accordion-toggle">▼</span>
           </button>
-          <div class="accordion-content" id="msg5">
+          <div class="accordion-content" id="agenda5">
             <div class="accordion-content-inner">
-              <p><strong>Canal:</strong> WhatsApp (só se tiver numero validado)</p>
-              <p style="margin-top: 0.75rem;"><strong>Timing:</strong> Quarta 15h</p>
-              <p style="margin-top: 0.75rem;"><strong>Tom:</strong> Mais coloquial, direto</p>
-              <p style="margin-top: 0.75rem;"><strong>Corpo:</strong></p>
-              <p style="margin-top: 0.75rem; color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red);">"Oi Lucas. Mandem mensagem no LinkedIn? Sem pressão nenhuma — só achei que essa coisa de OCP + representantes poderia ser rápido pra vocês. Bora conversar? Meu ID do calendly é [INSIRA]"</p>
-              <button class="copy-button" data-text="Oi Lucas. Mandem mensagem no LinkedIn? Sem pressão nenhuma — só achei que essa coisa de OCP + representantes poderia ser rápido pra vocês. Bora conversar? Meu ID do calendly é [INSIRA]">Copiar texto</button>
+              <p style="color: var(--off-white); margin-bottom: 0.75rem;"><strong>Objetivo:</strong> Garantir comprometimento para próxima etapa (proposta ou reunião com sócios).</p>
+              <p style="color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red); margin-bottom: 0.75rem;">"Lucas, com tudo que conversamos — faz sentido a gente avançar com o diagnóstico? Se sim, próximo passo seria eu montar uma proposta customizada e a gente marca uma reunião de apresentação com quem mais precisa estar envolvido na decisão."</p>
+              <button class="copy-button" data-text="Lucas, com tudo que conversamos — faz sentido a gente avançar com o diagnóstico? Se sim, próximo passo seria eu montar uma proposta customizada e a gente marca uma reunião de apresentação com quem mais precisa estar envolvido na decisão.">Copiar texto</button>
+              <p style="margin-top: 1rem; margin-bottom: 0.5rem; font-weight: 600; color: var(--success);">Se disser SIM:</p>
+              <p style="color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--success); margin-bottom: 0.75rem;">"Perfeito. Vou preparar a proposta até [data]. Quem mais precisa participar da próxima reunião? Tem algum sócio ou diretor financeiro que valida esse tipo de investimento?"</p>
+              <button class="copy-button" data-text="Perfeito. Vou preparar a proposta até [data]. Quem mais precisa participar da próxima reunião? Tem algum sócio ou diretor financeiro que valida esse tipo de investimento?">Copiar texto</button>
+              <p style="margin-top: 1rem; margin-bottom: 0.5rem; font-weight: 600; color: var(--warning);">Se pedir tempo:</p>
+              <p style="color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--warning); margin-bottom: 0.75rem;">"Sem problema. Vamos fazer assim — eu te mando um resumo do que conversamos por email até amanhã, e a gente marca um follow-up pra quinta? Assim você tem tempo de falar internamente."</p>
+              <button class="copy-button" data-text="Sem problema. Vamos fazer assim — eu te mando um resumo do que conversamos por email até amanhã, e a gente marca um follow-up pra quinta? Assim você tem tempo de falar internamente.">Copiar texto</button>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- TAB: OBJEÇÕES -->
-    <section id="objecoes" class="tab-content" role="tabpanel">
-      <div class="card">
+      <!-- SCRIPTS DE OBJEÇÃO -->
+      <div class="card" style="margin-top: 1.5rem;">
         <h2>Scripts de objeção</h2>
-        <p style="margin-bottom: 2rem;">Respostas prontas para os bloqueios mais prováveis em conversa com Lucas.</p>
+        <p style="margin-bottom: 2rem; color: var(--text-secondary);">Respostas prontas para os bloqueios mais prováveis durante a reunião com Lucas.</p>
 
         <div class="accordion-item expanded">
           <button class="accordion-header" aria-expanded="true" aria-controls="obj1">
@@ -1333,51 +1371,55 @@
           </button>
           <div class="accordion-content" id="obj1">
             <div class="accordion-content-inner">
-              <p><strong>Contexto da objeção:</strong> Empresa está confortável com crescimento orgânico e receita estável.</p>
-              <p style="margin-top: 1rem;"><strong>Resposta sugerida:</strong></p>
-              <p style="margin-top: 0.75rem; color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red);">"Entendo — vocês estão num patamar legal. Mas Lucas, pensa isso: com 28 representantes, cada um gerando uma conta nova por mês seria 28 contas/mês sem nenhum esforço de marketing estruturado. Hoje, de onde vêm essas 28 contas? Provavelmente de quem? Do networking do representante. Se uma dessas pessoas sai, a conta some. Com demanda digital estruturada, vocês têm pipeline previsível independente do turnover da rede. Faz sentido?"</p>
+              <p><strong>Tipo:</strong> <span style="background: var(--surface-md); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; color: var(--warning);">Status quo</span></p>
+              <p style="margin-top: 1rem;"><strong>Resposta:</strong></p>
+              <p style="margin-top: 0.75rem; color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red);">"Entendo — vocês estão num patamar legal. Mas pensa isso: com 28 representantes, cada um gerando uma conta nova por mês seria 28 contas/mês sem nenhum esforço de marketing estruturado. Hoje, de onde vêm essas contas? Provavelmente do networking do representante. Se uma dessas pessoas sai, a conta some. Com demanda digital estruturada, vocês têm pipeline previsível independente do turnover da rede."</p>
+              <button class="copy-button" data-text="Entendo — vocês estão num patamar legal. Mas pensa isso: com 28 representantes, cada um gerando uma conta nova por mês seria 28 contas/mês sem nenhum esforço de marketing estruturado. Hoje, de onde vêm essas contas? Provavelmente do networking do representante. Se uma dessas pessoas sai, a conta some. Com demanda digital estruturada, vocês têm pipeline previsível independente do turnover da rede.">Copiar texto</button>
             </div>
           </div>
         </div>
 
         <div class="accordion-item">
           <button class="accordion-header" aria-expanded="false" aria-controls="obj2">
-            <span>"Nós não temos budget agora."</span>
+            <span>"Não temos budget agora."</span>
             <span class="accordion-toggle">▼</span>
           </button>
           <div class="accordion-content" id="obj2">
             <div class="accordion-content-inner">
-              <p><strong>Contexto da objeção:</strong> Freio orçamentário ou fiscal.</p>
-              <p style="margin-top: 1rem;"><strong>Resposta sugerida:</strong></p>
-              <p style="margin-top: 0.75rem; color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red);">"Ótimo — vamos ver se faz sentido primeiro. Vocês estão batendo metas todo mês com R$ 1,2M de receita. Isso significa que se a gente conseguisse estruturar demanda digital, qual seria o incremento de receita em 90 dias? Se for R$ 200-300K de receita incremental, o budget se paga sozinho. Quer explorar o math antes de falarmos de investimento?"</p>
+              <p><strong>Tipo:</strong> <span style="background: var(--surface-md); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; color: var(--red-vivid);">Orçamento</span></p>
+              <p style="margin-top: 1rem;"><strong>Resposta:</strong></p>
+              <p style="margin-top: 0.75rem; color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red);">"Vamos ver se faz sentido primeiro. Vocês faturam R$ 1,2M/mês. Se a gente conseguisse estruturar demanda digital, qual seria o incremento em 90 dias? Se for R$ 200-300K de receita incremental, o investimento se paga sozinho no primeiro ciclo. Quer explorar o math antes de falarmos de investimento?"</p>
+              <button class="copy-button" data-text="Vamos ver se faz sentido primeiro. Vocês faturam R$ 1,2M/mês. Se a gente conseguisse estruturar demanda digital, qual seria o incremento em 90 dias? Se for R$ 200-300K de receita incremental, o investimento se paga sozinho no primeiro ciclo. Quer explorar o math antes de falarmos de investimento?">Copiar texto</button>
             </div>
           </div>
         </div>
 
         <div class="accordion-item">
           <button class="accordion-header" aria-expanded="false" aria-controls="obj3">
-            <span>"Já tentamos isso com agência de RP, não funcionou."</span>
+            <span>"Já tentamos com agência e não funcionou."</span>
             <span class="accordion-toggle">▼</span>
           </button>
           <div class="accordion-content" id="obj3">
             <div class="accordion-content-inner">
-              <p><strong>Contexto da objeção:</strong> Experiência negativa anterior com RP reduz confiança.</p>
-              <p style="margin-top: 1rem;"><strong>Resposta sugerida:</strong></p>
-              <p style="margin-top: 0.75rem; color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red);">"Ótimo feedback — é exatamente por isso que isso não funcionou. RP trabalha comunicação/imagem; o que vocês precisam é geração de demanda. São duas coisas bem diferentes. A gente não quer contar história bonita — a gente quer gerar leads qualificados pra rede de representantes de vocês. Diferença é que aqui tem métrica clara: leads/mês. E se não gerar, a gente não cobra."</p>
+              <p><strong>Tipo:</strong> <span style="background: var(--surface-md); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; color: var(--warning);">Experiência negativa</span></p>
+              <p style="margin-top: 1rem;"><strong>Resposta:</strong></p>
+              <p style="margin-top: 0.75rem; color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red);">"Ótimo feedback. Posso perguntar o que exatamente contrataram? Se foi RP ou agência de social, a pegada é comunicação/imagem — não geração de demanda. São coisas bem diferentes. A gente não quer contar história bonita — a gente quer gerar leads qualificados pra rede de representantes. A métrica é clara: leads/mês com comportamento rastreável."</p>
+              <button class="copy-button" data-text="Ótimo feedback. Posso perguntar o que exatamente contrataram? Se foi RP ou agência de social, a pegada é comunicação/imagem — não geração de demanda. São coisas bem diferentes. A gente não quer contar história bonita — a gente quer gerar leads qualificados pra rede de representantes. A métrica é clara: leads/mês com comportamento rastreável.">Copiar texto</button>
             </div>
           </div>
         </div>
 
         <div class="accordion-item">
           <button class="accordion-header" aria-expanded="false" aria-controls="obj4">
-            <span>"Qual é a sua concorrência?"</span>
+            <span>"Qual a diferença de vocês pras outras agências?"</span>
             <span class="accordion-toggle">▼</span>
           </button>
           <div class="accordion-content" id="obj4">
             <div class="accordion-content-inner">
-              <p><strong>Contexto da objeção:</strong> Sondagem sobre mercado competitivo e diferenciais.</p>
-              <p style="margin-top: 1rem;"><strong>Resposta sugerida:</strong></p>
-              <p style="margin-top: 0.75rem; color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red);">"Boa pergunta. Tem agência grande de performance que trabalha com EPIs, mas eles atacam volume — pra eles você é ticket pequeno. O que diferencia a gente é que vocês NÃO vão ter concorrência em termos de martech estruturada no setor de EPIs. Elite Superflex, Samurai, as outras importadoras grandes — ninguém tá fazendo isso de verdade. Vocês poderiam ser os pioneiros, com vantagem de 6-12 meses."</p>
+              <p><strong>Tipo:</strong> <span style="background: var(--surface-md); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; color: var(--gray-lt);">Comparação</span></p>
+              <p style="margin-top: 1rem;"><strong>Resposta:</strong></p>
+              <p style="margin-top: 0.75rem; color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red);">"Agência grande de performance, pra eles você é ticket pequeno — vão te colocar num estagiário. Agência pequena não tem metodologia. A gente é diferente porque a primeira coisa que a gente faz não é montar campanha — é diagnosticar onde tá a trava da operação. Sem isso, qualquer ação de marketing é tiro no escuro. Por isso começamos com o raio-x de 45 dias."</p>
+              <button class="copy-button" data-text="Agência grande de performance, pra eles você é ticket pequeno — vão te colocar num estagiário. Agência pequena não tem metodologia. A gente é diferente porque a primeira coisa que a gente faz não é montar campanha — é diagnosticar onde tá a trava da operação. Sem isso, qualquer ação de marketing é tiro no escuro. Por isso começamos com o raio-x de 45 dias.">Copiar texto</button>
             </div>
           </div>
         </div>
@@ -1389,15 +1431,64 @@
           </button>
           <div class="accordion-content" id="obj5">
             <div class="accordion-content-inner">
-              <p><strong>Contexto da objeção:</strong> Demanda por SLA ou garantia de performance.</p>
-              <p style="margin-top: 1rem;"><strong>Resposta sugerida:</strong></p>
-              <p style="margin-top: 0.75rem; color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red);">"Esse é o negócio — a gente não garante resultado porque não controla qualificação da rede de vocês. O que a gente faz é: geração + qualificação + entrega pro seu time comercial. Se o representante não conseguir converter, é um problema da rede. Mas a métrica que a gente vai garantir é: X leads por mês com comportamento Y (visitaram página de produto, deixaram email, etc). A conversão é com vocês."</p>
+              <p><strong>Tipo:</strong> <span style="background: var(--surface-md); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; color: var(--success);">Garantia</span></p>
+              <p style="margin-top: 1rem;"><strong>Resposta:</strong></p>
+              <p style="margin-top: 0.75rem; color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red);">"O diagnóstico garante clareza — você vai saber exatamente onde está o gargalo e quanto ele custa. A partir daí, a execução tem métricas claras: leads gerados, custo por lead, taxa de conversão. A gente não controla o fechamento da rede de vocês, mas garante que o pipeline chega qualificado e rastreável."</p>
+              <button class="copy-button" data-text="O diagnóstico garante clareza — você vai saber exatamente onde está o gargalo e quanto ele custa. A partir daí, a execução tem métricas claras: leads gerados, custo por lead, taxa de conversão. A gente não controla o fechamento da rede de vocês, mas garante que o pipeline chega qualificado e rastreável.">Copiar texto</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false" aria-controls="obj6">
+            <span>"Preciso falar com meu sócio/financeiro."</span>
+            <span class="accordion-toggle">▼</span>
+          </button>
+          <div class="accordion-content" id="obj6">
+            <div class="accordion-content-inner">
+              <p><strong>Tipo:</strong> <span style="background: var(--surface-md); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; color: var(--warning);">Decisão compartilhada</span></p>
+              <p style="margin-top: 1rem;"><strong>Resposta:</strong></p>
+              <p style="margin-top: 0.75rem; color: var(--off-white); background: var(--surface-hover); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--red);">"Total sentido. Vamos fazer assim — eu preparo um resumo executivo com os números que conversamos, pra facilitar sua conversa interna. E já marcamos a próxima reunião com essa pessoa presente? Assim a gente não perde momentum."</p>
+              <button class="copy-button" data-text="Total sentido. Vamos fazer assim — eu preparo um resumo executivo com os números que conversamos, pra facilitar sua conversa interna. E já marcamos a próxima reunião com essa pessoa presente? Assim a gente não perde momentum.">Copiar texto</button>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- CHECKLIST PRÉ-REUNIÃO -->
+      <div class="card" style="margin-top: 1.5rem; border-left: 4px solid var(--success);">
+        <h2>Checklist pré-reunião</h2>
+        <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Confira antes das 16h.</p>
+        <div style="display: grid; gap: 0.75rem;">
+          <label style="display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer; padding: 0.75rem; background: var(--surface-md); border-radius: 6px;">
+            <input type="checkbox" style="margin-top: 4px; accent-color: var(--success); width: 18px; height: 18px;">
+            <span>Revisar ficha completa da Infinity EPI (aba "Ficha completa")</span>
+          </label>
+          <label style="display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer; padding: 0.75rem; background: var(--surface-md); border-radius: 6px;">
+            <input type="checkbox" style="margin-top: 4px; accent-color: var(--success); width: 18px; height: 18px;">
+            <span>Revisar análise SPICED (aba "SPICED") — score 4.35 HOT</span>
+          </label>
+          <label style="display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer; padding: 0.75rem; background: var(--surface-md); border-radius: 6px;">
+            <input type="checkbox" style="margin-top: 4px; accent-color: var(--success); width: 18px; height: 18px;">
+            <span>Abrir relatório de análise de marketing (projeção de prejuízo) em aba separada</span>
+          </label>
+          <label style="display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer; padding: 0.75rem; background: var(--surface-md); border-radius: 6px;">
+            <input type="checkbox" style="margin-top: 4px; accent-color: var(--success); width: 18px; height: 18px;">
+            <span>Ter dados de OCP/Portaria 672 à mão como argumento regulatório</span>
+          </label>
+          <label style="display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer; padding: 0.75rem; background: var(--surface-md); border-radius: 6px;">
+            <input type="checkbox" style="margin-top: 4px; accent-color: var(--success); width: 18px; height: 18px;">
+            <span>Testar link da reunião e preparar ambiente sem distrações</span>
+          </label>
+          <label style="display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer; padding: 0.75rem; background: var(--surface-md); border-radius: 6px;">
+            <input type="checkbox" style="margin-top: 4px; accent-color: var(--success); width: 18px; height: 18px;">
+            <span>Ler scripts de objeção acima pelo menos uma vez — não decorar, internalizar a lógica</span>
+          </label>
+        </div>
+      </div>
     </section>
-  </main>
+
+</main>
 
   <script>
     // Particles background
