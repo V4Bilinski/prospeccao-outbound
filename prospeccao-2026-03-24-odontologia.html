@@ -2796,13 +2796,28 @@ function copyMsg(btn) {
   }
 }
 
-/* Toggle cadence cards */
+/* Toggle cadence cards — supports both onclick="toggleCadence(this)" and class .open */
+function toggleCadence(el) {
+  var card = el.closest('.cadence-card');
+  if (!card) return;
+  var body = card.querySelector('.cadence-body');
+  if (!body) return;
+  var isOpen = body.style.display !== 'none' && body.style.display !== '';
+  if (body.style.display === 'none') {
+    body.style.display = 'block';
+    card.classList.add('open');
+  } else {
+    body.style.display = 'none';
+    card.classList.remove('open');
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
+  /* Also bind click for cadence-headers without inline onclick */
   document.querySelectorAll('.cadence-header').forEach(function(header) {
-    header.addEventListener('click', function() {
-      var card = this.closest('.cadence-card');
-      if (card) card.classList.toggle('open');
-    });
+    if (!header.getAttribute('onclick')) {
+      header.addEventListener('click', function() { toggleCadence(this); });
+    }
   });
 
   /* Fade-in animation on scroll */
